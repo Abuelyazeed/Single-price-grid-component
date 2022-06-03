@@ -1,0 +1,88 @@
+body {
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+}
+p {
+  line-height: 22px;
+}
+#space {
+  padding-top: 100px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "section1 section1"
+    "section2 section3";
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 19%);
+  width: 60%;
+}
+.section1 {
+  grid-area: section1;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 30px;
+  color: hsl(218, 22%, 67%);
+}
+.section1 h1 {
+  color: hsl(179, 62%, 43%);
+}
+.section1 h3 {
+  color: hsl(71, 73%, 54%);
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.section2 {
+  grid-area: section2;
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  border-bottom-left-radius: 10px;
+
+  padding: 30px;
+}
+.section2 strong {
+  font-size: 30px;
+  color: white;
+}
+.section2 p.one {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+.section2 p.two {
+  color: hsl(204, 43%, 93%);
+}
+button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border-radius: 4px;
+  width: 40%;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.section3 {
+  grid-area: section3;
+  background-color: hsl(179, 47.2%, 51.8%);
+  border-bottom-right-radius: 10px;
+  padding: 30px;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+.section3 h3 {
+  color: white;
+}
